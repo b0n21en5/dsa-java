@@ -1,8 +1,7 @@
-# java-enthusiastic
-coding with java
+# java-coding
 
 
-## Notes to remind of:
+### Notes to remind of:
                       * embedded: portable, reuseable, reliable with embedded systems
                       * secure: compile code into a binary byte interpreted on JVM
                       * robust: utilizes strong memory management by bypassing security dilemmas
