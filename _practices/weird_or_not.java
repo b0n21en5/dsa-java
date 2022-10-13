@@ -1,4 +1,4 @@
-package com.java_package;
+
 import java.util.Scanner;
 
 public class weird_or_not {
