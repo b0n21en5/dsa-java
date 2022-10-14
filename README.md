@@ -12,5 +12,11 @@
                       * dynamic: classes are loaded on demand also supports functions from native languages i.e. C, C++
                       
                       
+### <a href="https://www.computerhope.com/jargon/j/java_reserved_words.htm#:~:text=Java%20reserved%20words%20are%20keywords,an%20error%20or%20unexpected%20result.">Reserved Keywords</a>
+ 
+ 
+
+
+
                       
                        
