@@ -1,9 +1,10 @@
 import java.util.Scanner;
 import java.lang.Exception;
 
-class GCD
+class GCD 
 {
-    public static void main(String[] args){
+    public static void main(String[] args) throws java.lang.Exception
+    {
         int a,b,s,i,l;
         Scanner scn = new Scanner(System.in);
         a = scn.nextInt();
