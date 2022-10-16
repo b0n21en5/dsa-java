@@ -496,8 +496,11 @@ public class Pattern {
 
 
 
+
+        // Diamond_shaped pattern
+
         Scanner s = new Scanner(System.in);
-        int i=1, r=2, n1,n2, n = s.nextInt();
+        int i=1, r, n1, n = s.nextInt();
         n1 = (n+1)/2;
         while (i<=n1){
                 int sp = n1-i;
@@ -514,7 +517,8 @@ public class Pattern {
                 System.out.println();
                 i++;
         }
-        n2 = ((n+1)/2)-1;
+        int n2 = ((n+1)/2)-1;
+        r = n2;
         while (r>=1){
                 int t=1,sp = n2-r+1;
                 while (t<=sp){
