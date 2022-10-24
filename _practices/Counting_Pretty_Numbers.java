@@ -16,6 +16,7 @@ public class Counting_Pretty_Numbers {
 		        }
 		    }
 		    System.out.println(count);
+            t--;
 		}
 	}
 }
