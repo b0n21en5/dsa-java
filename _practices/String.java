@@ -39,16 +39,18 @@ class String_operations{
 
 
 
-        String str1="c";
-        String str2="a";
-        StringBuffer str1_ = new StringBuffer(str1);
-        str1_.delete(0, 0+1);
+        String str1="abcdcefg";
+        String str2="cd";
+        // StringBuffer str1_ = new StringBuffer(str1);
+        // str1_.delete(0, 0+1);
         // System.out.println(str1_.delete(0, 0+1));
-        System.out.println(str1_+"nothing");
-        System.out.println(str2.substring(0, 0));
+        // System.out.println(str1_+"nothing");
+        // System.out.println(str2.substring(0, 0));
         // String str3 = Character.toString(0);
         // System.out.println(str1.replaceFirst(Character.toString('a'), ""));
         // System.out.println(str1);
+
+        System.out.println(str1.contains(str2));
     
 }
 }
