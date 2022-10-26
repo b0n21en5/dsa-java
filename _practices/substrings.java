@@ -17,7 +17,7 @@ public class substrings {
 
     public static void substrings(String str){
         int l=str.length();
-        for (int i=0;i<l;i++){
+        for (int i=0;i<=l;i++){
             for (int j=i+l-1;j<l-i;j++){
                 System.out.println(str.substring(i, j));
             }
