@@ -1,34 +1,24 @@
 import java.util.*;
 
 public class highest_occuring_ch {
-    
 
-    public static int occu(String str, char ch){
-        int c=0;
-        for (int i=0;i<str.length();i++){
-            if (str.charAt(i)==ch){c++;}
-        }
-        return c;
-    }
 
 	public static char highestOccuringChar(String str) {
 		
         int[] arr = new int[128];
         
         for (int i=0;i<str.length();i++){
-            arr[str.charAt(i)] = occu(str, str.charAt(i)) ;
+            arr[str.charAt(i)]++ ;
         }
 
-        int ch=0;
-        int mx=arr[0];
-        for (int e=1;e<arr.length;e++){
-            if (arr[e]>mx){
-                mx = arr[e];
-                ch = e;
+        int max = Arrays.stream(arr).max().getAsInt();
+        for (int e=0;e<arr.length;e++){
+            if (arr[e]==max){
+                return (char) e;
             }
         }
 
-        return (char) ch;
+        return ' ';
 	}
 
 
