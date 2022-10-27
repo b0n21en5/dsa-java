@@ -1,8 +1,9 @@
 import java.io.*;
+import java.util.Arrays;
 public class Interscetion_two_Arrays {
 
 
-// I've implemented only the intersections method,, rest of the code is copied for execution of Code
+//  intersection method will sort two arrays at first then see what is common in both,,
 // input: 2  (no of test case)
 //        6  (size of array1 in test case_1)
 //        2 6 8 5 4 3  (array1)
@@ -16,13 +17,19 @@ public class Interscetion_two_Arrays {
 
 
     public static void intersections(int arr1[], int arr2[]) {
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
         int l1=arr1.length, l2=arr2.length;
+
     	for (int i=0;i<l1;i++){
+
             int j=0;
             for (;j<l2;j++){
+
                 if (arr1[i]==arr2[j]){
                     System.out.print(arr1[i] + " ");
-                    arr1[i] = 0;
+                    
                     arr2[j] = 0;
                     break;
                 }
@@ -31,9 +38,7 @@ public class Interscetion_two_Arrays {
     }
 
 
-    // rest of code was taken from somewhere :)
-    // ###########################
-    // ###########################
+    
 
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
