@@ -1,7 +1,8 @@
 import java.util.*;
 public class Rotate_Array {
-    
-    public static void rotate(int[] arr, int d) {
+
+    public static void rotateArray(int[] arr, int d){
+
 
         // 
         // rotatre method will going to rotate 
@@ -9,26 +10,13 @@ public class Rotate_Array {
         // from start to end
         // 
 
-    	int[] tmp = new int[d];
+
+        int[] tmp = new int[d];
         int i=0,k=0, l=arr.length;
-
-
-    // 
-    // below loop is using to make a copy of array
-    // till the index how far we want to rotate the array
-    // 
 
         for (;i<d;i++){
             tmp[i] = arr[i];
         }
-
-    
-    // 
-    // next loop below will first copy the values from
-    // array where it ends in last loop then it will
-    // copy temporary array from 0-th index till
-    // the length-1 index
-    // 
 
         for (int j=0;j<l;j++){
             
@@ -64,7 +52,7 @@ public class Rotate_Array {
         System.out.println("Input a integer how far u want to rotate: ");
         int n=s.nextInt();
 
-        int[] arr = {3,6,8,7,1,2,9,4,8,7,5,};
+        int[] arr = {3,6,8,7,1,2,9,4,8,7,5};
 
 
         System.out.println("Before Rotate Array looks like: ");
@@ -80,7 +68,9 @@ public class Rotate_Array {
         // an array and a integer till the point 
         // how far u want to rotate
         // 
-        rotate(arr, n);
+        // 
+
+        rotateArray(arr, n);
 
 
         System.out.println("\n\nAfter Rotate Array looks like: ");
