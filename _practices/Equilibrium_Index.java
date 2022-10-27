@@ -32,6 +32,6 @@ public static void main(String[] args) {
     
     int[] arr = {2, 3, 10, -10, 4, 2, 9};
 
-    System.out.println(euilibriumIndex(arr));
+    System.out.println("Equilibrium Index of the Array is:" + euilibriumIndex(arr));
 }
 }
