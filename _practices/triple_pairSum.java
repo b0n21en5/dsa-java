@@ -1,25 +1,30 @@
-import java.util.Arrays;
+import java.util.*;
 public class triple_pairSum {
     
     public static int triple(int[] arr, int num){
         Arrays.sort(arr);
-        int c=0, i=0, n = num - arr[0];
-		for(int j=1;j<arr.length;j++){
-            for(int k=j+1;k<arr.length;k++){
-                if(arr[j]+arr[k]==n){
-                c++;
-                }
-            }
+        int c=0, n = arr.length;
+ 
+        for (int i = 0;
+             i < n - 1; i++) {
             
-            if (j==arr.length-1 && i<arr.length-2){
-                i++;
-                n = num - arr[i];
-                j = i;
+            int l = i + 1;
+            int r = n - 1;
+            int x = num -arr[i];
+            while (l < r) {
+                if (arr[l] + arr[r] == x) {
+                    c++;
+                    r--;
+                }
+                else if (arr[l] + arr[r] < x)
+                    {l++;
+                    r = n-1;}
+                else
+                    r--;
             }
-        }
-        
-        return c;
     }
+    return c;
+}
 
 
     public static int tripePair(int[] arr, int num){
@@ -57,8 +62,8 @@ public class triple_pairSum {
 
 
 
-        // System.out.println(triple(arr, 10));
-        // System.out.println(tripePair(arr, 10));
-        // System.out.println(tripletSum.tripletSumArray(arr3, 10));
+        // System.out.println(triple(arr2, 10));
+        // // System.out.println(tripePair(arr, 10));
+        // System.out.println(tripletSum.tripletSumArray(arr2, 10));
     }
 }
