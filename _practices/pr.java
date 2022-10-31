@@ -38,14 +38,21 @@ public class pr {
         Arrays.sort(arr);
         int n = arr.length, c=0,k=0;
 
-        for (int i = 1; i < n - 2; i++) {
+        for (int i = 1; i < n; i++) {
             
             int x = num - (arr[k] + arr[i]);
-            
-            for (int j = i + 1; j < n-1; j++) {
-                if (x+arr[j]==num){
+
+            int j = i + 1;
+            for (; j < n; j++) {
+                if (x==arr[j]){
                     c++;
                 }
+            }
+            
+
+            if (j==n-1 && i==n-2 && k <n-2){
+                k++;
+                i = k;
             }
 
         }
@@ -106,8 +113,17 @@ public class pr {
         int sum = 10;
         
         // System.out.println(findTriplets(arr3, sum));
-        System.out.println(find(arr3, sum));
+        // System.out.println(find(arr3, sum));
         
         // System.out.println(findTrip(arr2, sum));
+        int a=10,b=20;
+        int c=a&b;
+        System.out.print(c);
+        int d=a|b;
+        System.out.print(d);
+        int e=a^b;
+        System.out.print(e);
+        int f=c+d+e;
+        System.out.print(~f);
     }
 }

@@ -72,7 +72,7 @@ public class tripletSum {
         int[] arr2 = {2, -5 ,8 ,-6 ,0, 5 ,10, 11, -3};
 
         int[] arr3 = {6, 1, 6, 5, 3, 2 };
-
+        System.out.println(second(arr2, 10));
         // Scanner sc = new Scanner(System.in);
 
         // System.out.println("Enter sum whose pair sum u want to count in the array: ");
@@ -88,10 +88,10 @@ public class tripletSum {
         // long end3 = System.nanoTime();
         // System.out.println(end3-str3 + " ms");
 
-        long str2 = System.nanoTime();
-        System.out.println("Total num of triplet sum with 3rd method  is: " + tripletSum(arr, 10));
-        long end2 = System.nanoTime();
-        System.out.println(end2-str2 + " ms");
+        // long str2 = System.nanoTime();
+        // System.out.println("Total num of triplet sum with 3rd method  is: " + tripletSum(arr, 10));
+        // long end2 = System.nanoTime();
+        // System.out.println(end2-str2 + " ms");
 
 
         
