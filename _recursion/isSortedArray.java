@@ -18,6 +18,18 @@ public class isSortedArray {
     }
 
 
+    public static boolean isSortedBetter(int[] arr, int si){
+
+        if (si == arr.length - 1)
+            return true;
+
+        if (arr[si]>arr[si+1])
+            return false;
+
+        return isSortedBetter(arr, si+1);
+    }
+
+
     static Scanner s = new Scanner(System.in);
 
     public static int[] takeInput(){
@@ -39,6 +51,8 @@ public class isSortedArray {
         int[] arr = takeInput();
 
         System.out.println(isSorted(arr));
+
+        System.out.println(isSortedBetter(arr, 0));
 
     }
 }
