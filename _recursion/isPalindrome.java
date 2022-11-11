@@ -2,33 +2,39 @@ import java.util.Scanner;
 
 class isPalindrome{
 
-    public static boolean pali(String str, int j, int i, boolean res){
+    public static boolean pali(String str, int j, int i){
 
-        if (j<0 && i>str.length()-1){return res;}
-        if (str.charAt(i)!=str.charAt(j)){
-            res = false;
-            return res;
-        }
+        if (i==j)
+            return true;
 
-        pali(str, j-1, i+1, res);
+        if (str.charAt(i)!=str.charAt(j))
+            return false;
 
-        return res;
+        if (i<j+1)
+            return pali(str, j-1, i+1);
+
+        return true;
     }
     
 
     public static boolean isPali(String input){
-        boolean res = true;
-        res = pali(input, input.length()-1, 0, res);
+        int n = input.length();
 
-        return res;
+        if (n==0)
+            return true;
+
+        return  pali(input, n-1, 0);
     }
 
 
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
+
         String str = s.nextLine();
 
         System.out.println(isPali(str));
+
+        s.close();
     }
 }
