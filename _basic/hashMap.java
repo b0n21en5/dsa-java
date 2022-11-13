@@ -1,0 +1,41 @@
+import java.util.HashMap;
+
+public class hashMap {
+    
+
+    public static void main(String[] args) {
+        
+        // creating an empty hashmap object of
+        // strings & integer type
+        HashMap<String, Integer> map1 = new HashMap<>();
+
+        //adding elements to the map 
+        //using standard put method
+        map1.put("Kayach", 455);
+        map1.put("Dibakar", 566);
+        map1.put("Souvik", 420);
+        map1.put("Gourmani", 430);
+        map1.put("Ratnadip", 484);
+
+        System.out.println(map1.size());
+
+
+        //printing the map1 object elements
+        System.out.println(map1);
+
+
+
+        //checking if a key is present 
+        // then print its value
+
+        if (map1.containsKey("Gourmani")){
+
+
+            // get method will return value 
+            // of a key from map object
+
+            System.out.println("\nMarks obtained by Gourmani is: "+ map1.get("Gourmani"));
+        }
+        
+    }
+}
