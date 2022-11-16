@@ -1,4 +1,4 @@
-##Classification of Data Structure:
+## Classification of Data Structure:
 				1.Linear Data Structure:
 							i. Static Data Structure: Array
 										
