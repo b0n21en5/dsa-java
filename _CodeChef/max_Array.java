@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class min_max_Array {
+public class max_Array {
     
 
     public static void main(String[] args) {
