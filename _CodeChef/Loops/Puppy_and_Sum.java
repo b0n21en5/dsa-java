@@ -22,5 +22,7 @@ public class Puppy_and_Sum {
 
             System.out.println(sum);
         }
+
+        scan.close();
     }
 }
