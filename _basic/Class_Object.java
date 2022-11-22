@@ -15,18 +15,30 @@ public class Class_Object {
 
 
     public static void main(String[] args) {
+
         Class_Object person = new Class_Object();
-
-        constru prsn = new constru();
-
-        prsn.person();
-
         // System.out.println("My current age is "+person.age);
         // System.out.println("My height is "+person.height+" cm");
         // System.out.println("My current weight is "+person.weight+" kg");
         // System.out.println(person.color);
         // person.sleep();
         // person.eating();
+
+
+        constru prsn = new constru();  //default constructor
+        // prsn.person();
+
+
+
+        //parameterized constructor
+        param_const ref = new param_const(95,"Gourmani");
+        ref.print();
+
+
+        //copy constructor
+        copy_const ref2 = new copy_const();
+        
+        
     }
 }
 
@@ -37,7 +49,7 @@ class constru{
 
     int a; String name;
 
-    constru(){
+    constru(){  //default constructor
         a = 25; name = "Bikash";
     }
 
@@ -46,8 +58,37 @@ class constru{
     {
         System.out.println("Age is "+ a+" name is " + name);
     }
-
-
-    
 }
 
+class param_const{
+    int x; String str;
+
+    param_const(int a, String s){  //parameterized constructor
+        str = s;
+        x = a;
+
+    }
+
+
+    void print (){
+        System.out.println("Marks obtained by "+str+" is: " + x);
+    }
+}
+
+
+
+class copy_const{
+    int a; String s;
+ 
+    copy_const(){   //default constructor
+        a = 90; 
+        s = "Kayach";
+        System.out.println("Marks obtained by "+  s+ " is: " +a);
+    }
+
+    copy_const(copy_const ref){  //copy_constructor
+        ref.a = a;
+        ref.s = s;
+        System.out.println("Marks obtained by "+ s+" is: "+ a);
+    }
+}
