@@ -61,11 +61,11 @@ class bank{
 
 
 
-public class customer {
+class customer {
     
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void customer() {
         bank cust = new bank();
 
         System.out.print("1.Check balance\n2.Withdraw\n3.Deposit\nEnter you'r choice: ");
@@ -87,5 +87,15 @@ public class customer {
 
             default:System.out.println("Invalid choice!");
         }
+    }
+}
+
+
+public class encapsulation{
+    public static void main(String[] args) {
+        
+        customer cust = new customer();
+
+        cust.customer();
     }
 }
