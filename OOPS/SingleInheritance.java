@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+
+//single inheritance is the simplest type of inheritance
+//in this, a class inherits propierties from a single class
+
+
+
 class SingleInheritance{
 
     public static void main(String[] args) {
