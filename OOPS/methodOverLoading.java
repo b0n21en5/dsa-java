@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+
+//the term method overloading allows us to have more
+//methods with same name, since this process executed
+// in compile time it is called as  compile time polymorphism
+
 public class methodOverLoading extends student {
     
     public static void main(String[] args) {
