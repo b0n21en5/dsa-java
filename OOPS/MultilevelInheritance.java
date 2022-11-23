@@ -13,9 +13,16 @@ public class MultilevelInheritance {
     
     public static void main(String[] args) {
 
+        System.out.println("Multi-level Inheritance program: ");
+
         Calculator fst = new Calculator();
 
-        fst.input();fst.add();fst.sub();fst.multi();fst.div();fst.rem();
+        fst.input();
+        fst.add();
+        fst.sub();
+        fst.multi();
+        fst.div();
+        fst.rem();
 
     }
 
