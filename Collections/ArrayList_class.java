@@ -3,7 +3,11 @@ import java.util.ArrayList;
 
 
 //the ArrayList class is a resizeable array,
-// found in java.util package
+
+//arraylist has a regular array inside it
+//whenever array size is out of bound new array with
+// bigger size of array replaced with old array
+// implementation of new array: [currentSize + (currentSize/2)]
 
 
 class ArrayList_class{
