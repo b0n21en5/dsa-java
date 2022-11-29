@@ -1,3 +1,17 @@
+// String without new keyword called string
+// literal and stored in string constant pool
+
+
+
+// string with new keyword is actually a string object
+// and directly stored in Heap memory
+
+
+// both carries different reference's
+
+
+
+
 public class string {
     
     public static void main(String[] args) {
@@ -31,7 +45,7 @@ public class string {
 
 
         String new_str = str.concat(str2);
-        
+
         System.out.println(new_str);
 
         // if (str.equals(str2)){
