@@ -17,25 +17,34 @@ public class hashMap {
         map1.put("Gourmani", 430);
         map1.put("Ratnadip", 484);
 
-        System.out.println(map1.size());
+        int n = map1.size();
+        System.out.println(n);
 
+        // map1.
 
         //printing the map1 object elements
         System.out.println(map1);
 
 
+        System.out.println("marks obtained by kayach is: "+ map1.get("Dibakar"));
+        
 
         //checking if a key is present 
         // then print its value
 
-        if (map1.containsKey("Gourmani")){
+        if (map1.containsKey("hemant")){
 
 
             // get method will return value 
             // of a key from map object
 
-            System.out.println("\nMarks obtained by Gourmani is: "+ map1.get("Gourmani"));
+            System.out.println("student attended exam");
+        }
+        else{
+            System.out.println("absent");
         }
         
     }
 }
+
+
