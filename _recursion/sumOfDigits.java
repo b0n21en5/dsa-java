@@ -12,8 +12,11 @@ public class sumOfDigits {
 
     public static int sumOfDigits(int num, int sum){
 
-        if (num<10)
-            return sum += num;
+        if (num<10){
+            sum += num;
+            return sum;
+        }
+            
         
         sum += num%10;
 
