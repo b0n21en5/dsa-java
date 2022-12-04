@@ -1,5 +1,6 @@
 public class instance_and_static {
     int b = 5;
+    static int a=2;
 
     instance_and_static(){
         System.out.println("Inside default constructor..");
@@ -28,7 +29,7 @@ public class instance_and_static {
     }
 
 
-    static int a=2;
+    
     static{
 
         // static deals with class
