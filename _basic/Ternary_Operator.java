@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Ternary_Operator {
@@ -8,7 +9,7 @@ public class Ternary_Operator {
     // condition ? ifConditionTrue : ifConditionFalse;
     
 
-    public static void main (String[] args) throws java.lang.Exception
+    public static void main (String[] args)
 	{
 		
 		Scanner sc = new Scanner(System.in);
@@ -25,5 +26,7 @@ public class Ternary_Operator {
 		    System.out.println(res);
 		    t--;
 		}
+
+		sc.close();
 	}
 }
