@@ -65,7 +65,7 @@ class customer {
     
     static Scanner sc = new Scanner(System.in);
 
-    public static void customer() {
+    public void customer() {
         bank cust = new bank();
 
         System.out.print("1.Check balance\n2.Withdraw\n3.Deposit\nEnter you'r choice: ");
